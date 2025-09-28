@@ -15,7 +15,7 @@
   "bugs": {
     "url": "https://github.com/SonarCreature/Vast-Arcadia-andhacks11/issues"
   },
-  "homepage": "https://github.com/SonarCreature/Vast-Arcadia-andhacks11#readme",
+  "homepage": "https://www.vastarcadia.com",
   "description": "",
   "devDependencies": {
     "copy-webpack-plugin": "^13.0.1",
