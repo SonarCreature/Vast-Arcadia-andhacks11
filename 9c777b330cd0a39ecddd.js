@@ -102,7 +102,7 @@ function secondTutorial(){
     log.color = 'white';
     eventLog(log);
     log = new Object()
-    log.text = "Command has authorized your continued involvement until 2075, your new objectives are:";
+    log.text = "Command has authorized your continued involvement until 2050, your new objectives are:";
     log.color = 'white';
     eventLog(log);
     log = new Object()
@@ -110,7 +110,7 @@ function secondTutorial(){
     log.color = 'white';
     eventLog(log);
     log = new Object()
-    log.text = "2. Attempt to restore the Biosphere Health to above 1000 by 2075";
+    log.text = "2. Attempt to restore the Biosphere Health to above 1000 by 2050";
     log.color = 'white';
     eventLog(log);
     log = new Object()
@@ -170,10 +170,10 @@ function endYear(){
     if(biostability <= 0){
         endGame("bad_end")
     }
-    if(year >= 2075 && biostability >= 1000){
+    if(year >= 2050 && biostability >= 1000){
         endGame("good_end")
     }
-    if(year >= 2075 && biostability < 1000){
+    if(year >= 2050 && biostability < 1000){
         endGame("neutral_end")
     }
 }
