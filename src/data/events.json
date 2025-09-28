@@ -1,0 +1,210 @@
+{
+    "national_leader": {
+        "name": "You are the Leader of a Nation",
+        "image": "globe.jpg",
+        "description": "You find yourself in a position of power in one of the world's governments. Whatever the nature of your office is, you are in a unique position to forward green policies.",
+        "options": [
+            {
+                "name": "Invest in Green Energy",
+                "biosphere": 0,
+                "permanent_biosphere": 0,
+                "technology": "investment",
+                "add_events": ["revolutionary", "academic"],
+                "hover":"Start Agenda: Green Futures",
+                "log": "You invested in Green Energy."
+            },
+            {
+                "name": "Cease Fossil Fuel Subsidies",
+                "biosphere": 0,
+                "permanent_biosphere": 1,
+                "technology": "",
+                "add_events": ["revolutionary", "crisis"],
+                "hover":"Biosphere Stability: +1",
+                "log": "You stopped subsidizing fossil fuel giants, causing people to seek energy from greener sources. +1 Biosphere Stability"
+            }
+        ]
+    },
+    "revolutionary": {
+        "name": "You are a Revolutionary",
+        "image": "revolution.jpg",
+        "description": "You find yourself a key member of a revolutionary movement in a corrupt nation. Whatever the nature of your revoluton is, you can shake the systems that support the destruction of the Biosphere.",
+        "options": [
+            {
+                "name": "Eat the Rich",
+                "biosphere": 30,
+                "permanent_biosphere": 0,
+                "technology": "",
+                "add_events": ["organizer", "artist"],
+                "hover":"Biosphere Health: +30",
+                "log": "You directly removed several powerful people responsible for profitting off the destruction of the environment, but with no plan for what comes next, this is unlikely to affect lasting change. +30 Biosphere Health"
+            },
+            {
+                "name": "Rising Tides",
+                "biosphere": 0,
+                "permanent_biosphere": 3,
+                "technology": "",
+                "add_events": ["organizer", "researcher"],
+                "hover":"Biosphere Stability: +3",
+                "log": "Wresting control of the systems of power your party has implemented a system of economics that does not prioritze profit over people. +3 Biosphere Stability"
+            }
+        ]
+    },
+    "researcher": {
+        "name": "You are a Researcher",
+        "image": "research.jpg",
+        "description": "You find yourself in a position at a laboratory performing climate research. Whatever the nature of your research is, you can forward promising new technologies that may avert disaster.",
+        "options": [
+            {
+                "name": "New Energy Sources",
+                "biosphere": 0,
+                "permanent_biosphere": 0,
+                "technology": "green-energy",
+                "add_events": ["workers", "academic"],
+                "hover":"Start Research: Green Energy",
+                "log": "You kickstarted research into more sustainable sources of energy."
+            },
+            {
+                "name": "Geo-Engineering",
+                "biosphere": 0,
+                "permanent_biosphere": 0,
+                "technology": "engineering",
+                "add_events": ["workers", "national_leader"],
+                "hover":"Start Research: Geo-Engineering",
+                "log": "You kickstarted research into ways we can modify the environment to avoid climate catastrophe,"
+            }
+        ]
+    },
+    "crisis": {
+        "name": "You are facing a crisis.",
+        "image": "crisis.jpg",
+        "description": "You find yourself a common citizen of the world, facing a crisis. This crisis is the direct result climate inaction, and will only make the future worse.",
+        "options": [
+            {
+                "name": "There is no avoiding what has already begun.",
+                "biosphere": 0,
+                "permanent_biosphere": 0,
+                "technology": "",
+                "add_events": ["revolutionary", "assistance"],
+                "hover":"Biosphere Health: -50",
+                "log": "A climate crisis rocked the world, exasperating existing wounds. -50 Biosphere Health"
+            }
+        ]
+    },
+    "assistance": {
+        "name": "You are an Agent of Vast Arcadia",
+        "image": "future.jpg",
+        "description": "You are an agent of the potential future climate utopia of Vast Arcadia. They have seen fit to offer you assitance in your emission.",
+        "options": [
+            {
+                "name": "Technology",
+                "biosphere": 100,
+                "permanent_biosphere": 0,
+                "technology": "",
+                "add_events": ["academic", "organizer"],
+                "hover":"Biosphere Health: +100",
+                "log": "You brought fuel sources from the future into the present, massively reducing the consumption of fossil fuels, but only for a time. +100 Biosphere Health"
+            },
+            {
+                "name": "Reorganization",
+                "biosphere": 0,
+                "permanent_biosphere": 10,
+                "technology": "",
+                "add_events": ["academic", "national_leader"],
+                "hover":"Biosphere Stability: +10",
+                "log": "Technology is not enough to save the world. Reorganization of world governments, and economics is necessary. Using advanced temporal manipulation, Vast Arcadia can modify your present to make this happen immediately. +10 Biosphere Stability."
+            }
+        ]
+    },
+    "organizer": {
+        "name": "You are an Organizer",
+        "image": "union.jpg",
+        "description": "You are a political organizer in one of the world's nations. Whatever the nature of your organization, you can rally people behind the common cause of environmentalism.",
+        "options": [
+            {
+                "name": "Call for Government Reform.",
+                "biosphere": 0,
+                "permanent_biosphere": 0,
+                "technology": "reform",
+                "add_events": ["artist", "academic"],
+                "hover":"Start Agenda: Reform",
+                "log": "Your movement is pressuring your nations government to enact more climate friendly policies."
+            },
+            {
+                "name": "Call for Anti-Corporate Action",
+                "biosphere": 0,
+                "permanent_biosphere": 0,
+                "technology": "boycotts",
+                "add_events": ["artist", "workers"],
+                "hover":"Start Agenda: Boycotts",
+                "log": "Your movement is pressuring corporations to engage in more eco-friendly action."
+            }
+        ]
+    },
+    "academic": {
+        "name": "You are an Academic",
+        "image": "academics.jpg",
+        "description": "You are an academic at one of the world's centers of learning. Whatever the nature of your academics, you are in a position to forward new ideas that may help curb the climate crisis.",
+        "options": [
+            {
+                "name": "Suggest New Social Policies",
+                "biosphere": 30,
+                "permanent_biosphere": 0,
+                "technology": "",
+                "add_events": ["revolutionary", "national_leader"],
+                "hover":"Biosphere Health: +30",
+                "log": "You propose new ways of life people can engage in now that are more eco friendly. +30 Biosphere Health."
+            },
+            {
+                "name": "Suggest New Economic Policies",
+                "biosphere": 0,
+                "permanent_biosphere": 5,
+                "technology": "",
+                "add_events": ["revolutionary", "artist"],
+                "hover":"Biosphere Stability: +5",
+                "log": "You suggest novel forms of economic organization, that avoid the pitfalls of the profit motive. +5 Biosphere Stability."
+            }
+        ]
+    },
+    "workers": {
+        "name": "You are a Worker.",
+        "image": "workers.jpg",
+        "description": "You are a worker in one of the world's industries. Whatever the nature of your work, you are in a position to inspire collective action among your coworkers.",
+        "options": [
+            {
+                "name": "Call for a Union",
+                "biosphere": 0,
+                "permanent_biosphere": 3,
+                "technology": "",
+                "add_events": ["organizer", "artist"],
+                "hover":"Biosphere Stability: +3",
+                "log": "You and your coworkers banded together to demand more eco-friendly business practice from your employers."
+            },
+            {
+                "name": "Call for a Revolution",
+                "biosphere": 30,
+                "permanent_biosphere": 0,
+                "technology": "",
+                "add_events": ["revolutionary", "organizer"],
+                "hover":"Biosphere Health: +30",
+                "log": "You and your coworkers refused to work, grinding the gears of your corporation to a halt."
+            }
+        ]
+    },
+    "artist": {
+        "name": "Earth Day, 2025",
+        "image": "artist.jpg",
+        "description": "You are an artist. While your worker is unlikely to solve the worlds crises, it may inspire those in a position to enact change to do so.",
+        "options": [
+            {
+                "name": "Dream",
+                "biosphere": 0,
+                "permanent_biosphere": 0,
+                "technology": "",
+                "add_events": ["assistance", "assistance"],
+                "hover":"Imagine a Better Future",
+                "log": "You reminded your community that a better world is possible."
+            }
+        ]
+    }
+    
+}

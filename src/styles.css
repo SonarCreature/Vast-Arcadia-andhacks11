@@ -1,0 +1,226 @@
+:root{
+    --health-color: rgb(127.5, 127.5, 0);
+}
+
+body{
+    margin: 10px;
+    padding: 0;
+    background-color: rgb(0, 0, 0);
+    color: var(--health-color);
+}
+
+.globe{
+    fill: black;
+    stroke: var(--health-color);
+    stroke-width: 0.5px;
+    width: 75px;
+}
+
+#content{
+    width: calc(100vw - 20px);
+    height: calc(100vh - 20px);
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: space-between;
+}
+
+
+#content > div:not(#tech){
+    border: 1px solid var(--health-color);
+    border-right: 0;
+}
+
+#log{
+    flex: 1 1 auto;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    color: var(--health-color);
+    overflow: scroll;
+}
+
+#log p{
+    font-size: 24pt;
+    margin: calc(25px - 12pt);
+}
+
+#eventlog{
+    flex: 1 0 auto;
+    display: flex;
+    border: 1px solid var(--health-color);
+    border-bottom: 0;
+    border-right: 0;
+    border-left: 0;
+    overflow: scroll;
+}
+
+#next{
+    border-radius: 0;
+    background-color: var(--health-color);
+    border: 0;
+    margin: 10px;
+    min-height: 40px;
+    position: sticky;
+    bottom: 5px;
+}
+
+#next:hover{
+    color: var(--health-color);
+    background-color: black;
+}
+
+.active{
+    box-shadow: 0px 0px 50px 10px var(--health-color);
+}
+
+#bio div{
+    flex: 0 0 1;
+    color: var(--health-color);
+    font-size: 32pt;
+    display: flex;
+    align-items: center;
+    margin: 10px;
+}
+
+#bio span{
+    margin-left: 10px;
+}
+
+#tech{
+    flex-basis: 50px;
+    flex-shrink: 0;
+    border: 1px solid var(--health-color);
+    overflow: hidden;
+}
+
+#arrow{
+    width: 50px;
+    fill: var(--health-color);
+    flex: 0 0 50px;
+}
+
+#tech #first-tech{
+    border: 1px solid var(--health-color);
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 24pt;
+    height: 56px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+
+#event-dialog[open]{
+    background-color: black;
+    border: 1px solid var(--health-color);
+    width: 90vw;
+    height:90vh;
+    top:5vh;
+    color: var(--health-color);
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    overflow: scroll;
+    z-index: 1;
+}
+
+#event-title{
+    position: sticky;
+    top:0;
+    font-size: 24pt;
+    border-bottom: 1px solid var(--health-color);
+    margin-top: 10px;
+    margin-left: 0px;
+    background-color: black;
+}
+
+#event-description{
+    margin-left:10px;
+}
+
+#options{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+.option{
+    margin-bottom: 10px;
+    padding: 5px;
+    border: 1px solid var(--health-color);
+    font-size: 16pt;
+    background-color: black;
+    color: var(--health-color);
+}
+
+.option:hover{
+    background-color: var(--health-color);
+    color: black;
+}
+
+.tech{
+    flex: 0 0 auto;
+    margin: 10px;
+    display: flex;
+    padding: 10px;
+    border: 1px solid var(--health-color);
+    height: 100px;
+
+}
+
+.tech > div{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+#tech-status{
+    display: flex;
+    flex-direction: column;
+    visibility: hidden;
+}
+
+.tech img{
+    height:100px;
+    display: static;
+}
+
+.tech-title{
+    font-size: 16pt;
+    font-weight: bold;
+    position: sticky;
+    top:0;
+    background-color: black;
+}
+
+.tech-timer{
+    position: sticky;
+    top: 16pt;
+    background-color: black;
+    border-bottom: 1px solid var(--health-color);
+}
+
+#eventlog{
+    flex-shrink: 1;
+    min-width: none;
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
+}
+
+.log{
+    flex-shrink: 1;
+    min-width: 0;
+    margin: 10px;
+    border: 1px solid;
+    padding: 5px;
+    font-size: 16pt;
+    white-space: wrap;
+}

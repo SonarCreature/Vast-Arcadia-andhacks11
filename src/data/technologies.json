@@ -1,0 +1,58 @@
+{
+    "investment":{
+        "name":"Green Futures",
+        "type": "Agenda",
+        "time":10,
+        "image": "globe.jpg",
+        "log":"Started Agenda: Green Futures",
+        "effectlog": "+5 to biosphere stability",
+        "description": "A comprehensive investment strategy to reduce emissions and imporve sources of green energy",
+        "effects":{
+            "permanent_biosphere": 5
+        }
+    },"green-energy":{
+        "name":"New Energy Sources",
+        "type": "technology",
+        "time":5,
+        "image": "research.jpg",
+        "description": "Sources of Green Energy are not only necessary for combatting climate change, but also to meet the needs of a growing populace.",
+        "log":"Started Research: New Energy Sources",
+        "effectlog": "+10 to biosphere stability",
+        "effects":{
+            "permanent_biosphere": 10
+        }
+    },"engineering":{
+        "name":"Geo-Engineering",
+        "type": "technology",
+        "time":1,
+        "image": "research.jpg",
+        "description": "Geo-Engineering seeks to modify the environment directly and invasively, addressing the problems with the environment head-on",
+        "log":"Started Researching Temples",
+        "effectlog": "+100 to biosphere health",
+        "effects":{
+            "biosphere": 100
+        }
+    },"reform":{
+        "name":"Reform",
+        "type": "agenda",
+        "time":15,
+        "image": "union.jpg",
+        "description": "Government Reform is slow, but can lead to more stable and peaceful results and climate reformation, when it works.",
+        "log":"Started Agenda: Reform",
+        "effectlog": "+5 to biosphere stability",
+        "effects":{
+            "permanent_biosphere": 5
+        }
+    },"boycotts":{
+        "name":"Boycotts",
+        "type": "agenda",
+        "time":3,
+        "image": "union.jpg",
+        "description": "Boycotts can grind fossil fuel and companies with unsustainable manufacturing processes to a halt if properly employed. They work quickly as well.",
+        "log":"Started Agenda: Boycotts",
+        "effectlog": "+50 to biosphere health",
+        "effects":{
+            "biosphere": 50
+        }
+    }
+}
